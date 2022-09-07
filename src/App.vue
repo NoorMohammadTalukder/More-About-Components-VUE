@@ -11,7 +11,16 @@
 </template>
 
 <script>
-export default {
+  import TheHeader from './components/TheHeader.vue';
+  import BadgeList from './components/BadgeList.vue';
+  import UserInfo from './components/UserInfo.vue';
+  
+  export default {
+  components:{
+    'the-header':TheHeader,
+    BadgeList,
+    UserInfo,
+  },
   data() {
     return {
       activeUser: {
