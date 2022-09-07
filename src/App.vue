@@ -8,18 +8,28 @@
       :role="activeUser.role"
     ></user-info>
   </div>
+  
+  <course-goals>
+    <template #default="slotProps">
+      <h2>{{slotProps.item}}</h2>
+    </template>
+  </course-goals>
+
 </template>
 
 <script>
   import TheHeader from './components/TheHeader.vue';
   import BadgeList from './components/BadgeList.vue';
   import UserInfo from './components/UserInfo.vue';
+  import CourseGoals from './components/CourseGoals.vue';
   
   export default {
   components:{
     'the-header':TheHeader,
     BadgeList,
     UserInfo,
+    CourseGoals,
+    
   },
   data() {
     return {
