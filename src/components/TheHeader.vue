@@ -4,18 +4,18 @@
   </header>
 </template>
 
-<style>
+<style scoped>
   header {
     width: 100%;
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #14005e;
+    background-color: #9a83da;
   }
 
   header h1 {
-    color: white;
+    color: rgb(14, 2, 2);
     margin: 0;
   }
 </style>
