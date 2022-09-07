@@ -11,7 +11,9 @@
     ></user-info> -->
     <!-- <active-goals></active-goals>
     <manage-goals></manage-goals> -->
-    <component :is='selectedComponent'></component>
+    <keep-alive>
+      <component :is='selectedComponent'></component>
+    </keep-alive>
   </div>
   
   <!-- <course-goals>
